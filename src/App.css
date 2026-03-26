@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  /* Base */
+  --primary: #716A5C; 
+  --secondary:#F3F1EC;  
+  --text-primary:#494743;
+  --text-secondary:#F2EFE6; 
+  --yellow:#EACF00;      
+ 
+}
+.inria{
+  font-family: "Inria Serif", serif;
+}
+body{
+  font-family: "Noto Sans", sans-serif;
+}
