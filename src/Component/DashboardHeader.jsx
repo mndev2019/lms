@@ -2,9 +2,11 @@ import React from "react";
 import { BiSolidBell } from "react-icons/bi";
 import { FaUser } from "react-icons/fa";
 import { HiCalendar } from "react-icons/hi";
+import { useNavigate } from "react-router-dom";
 
 
 const DashboardHeader = () => {
+  const navigate = useNavigate("");
   return (
     <div className="w-full h-16 bg-white flex items-center justify-between px-6">
 
@@ -15,8 +17,8 @@ const DashboardHeader = () => {
 
       {/* Right Icons */}
       <div className="flex items-center gap-6 text-xl text-black">
-        <BiSolidBell />
-        <HiCalendar />
+        <BiSolidBell onClick={()=> navigate('notification')} />
+        {/* <HiCalendar /> */}
       </div>
 
     </div>

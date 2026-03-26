@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
     const navigate = useNavigate("");
-    const handlesubmit = (e) =>{
+    const handlesubmit = (e) => {
         e.preventDefault()
         navigate('/dashboard')
     }
@@ -18,7 +18,10 @@ const Login = () => {
                 <div className="flex flex-col justify-center px-10 py-8">
 
                     {/* Logo */}
-                    <h2 className="text-2xl font-bold mb-6">LOGO</h2>
+                    {/* <h2 className="text-2xl font-bold mb-6">LOGO</h2> */}
+                    <div className="text-3xl font-black tracking-tighter">
+                        Ramot<span className="text-yellow-400 font-normal">LMS</span>
+                    </div>
 
                     <h3 className="text-[30px] font-semibold text-(--text-primary)">
                         Launch and grow your online learning business with AI
@@ -61,7 +64,7 @@ const Login = () => {
                         </div>
                         <div className="mt-10">
                             {/* Button */}
-                            <button type="submit" className="w-full bg-[#6292F2] hover:bg-blue-600 text-white py-2 rounded-md text-lg font-medium transition" onClick={()=> navigate('/dashboard')}>
+                            <button type="submit" className="w-full bg-[#6292F2] hover:bg-blue-600 text-white py-2 rounded-md text-lg font-medium transition" onClick={() => navigate('/dashboard')}>
                                 Continue
                             </button>
                         </div>
@@ -73,7 +76,7 @@ const Login = () => {
                     {/* Login */}
                     <p className="text-sm text-(--text-primary) text-center mt-10">
                         Don’t have an account?{" "}
-                        <span className="text-[#6292F2] cursor-pointer" onClick={()=>navigate('/signup')}>Signup</span>
+                        <span className="text-[#6292F2] cursor-pointer" onClick={() => navigate('/signup')}>Signup</span>
                     </p>
 
                 </div>

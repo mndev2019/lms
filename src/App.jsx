@@ -17,6 +17,15 @@ import DashboardLayout from './Layout/DashboardLayout/DashboardLayout'
 import Dashboard from './DashboardItems/Dashboard'
 import CreateCourse from './DashboardItems/Courses/CreateCourse'
 import ViewCourse from './DashboardItems/Courses/ViewCourse'
+import AccessCode from './DashboardItems/AccessCode'
+import Profile from './DashboardItems/Account/Profile'
+import PurchaseHistory from './DashboardItems/Account/PurchaseHistory'
+import Notifications from './DashboardItems/Notification'
+import Blog from './Pages/Blog'
+import HomePage from './Pages/HomePage'
+import LiveWebinar from './Pages/LiveWebinar'
+import PopularCourse from './Pages/PopularCourse'
+import CourseCards from './Pages/CourseCards'
 
 
 
@@ -28,7 +37,8 @@ function App() {
         <Route path="/" element={<WebLayout />}>
 
 
-          <Route index element={<Home />} />
+          {/* <Route index element={<Home />} /> */}
+          <Route index element={<HomePage />} />
           <Route path='/all-courses' element={<AllCourses />} />
           <Route path='/learning-path' element={<LearningPath />} />
           <Route path='/recommended' element={<Recommended />} />
@@ -36,6 +46,10 @@ function App() {
           <Route path='/categories' element={<Categories />} />
           <Route path='/pricing' element={<Pricing />} />
           <Route path='/web-calender' element={<WebCaenderDetail />} />
+          <Route path='/blog' element={<Blog/>}/>
+          <Route path='/live-webinar' element={<LiveWebinar/>}/>
+          <Route path='/popular-course' element={<PopularCourse/>}/>
+          <Route path='/course-page' element={<CourseCards/>}/>
 
         </Route>
         <Route path='/login' element={<Login />}></Route>
@@ -47,6 +61,10 @@ function App() {
           <Route index element={<Dashboard />} />
           <Route path='create-course' element={<CreateCourse />} />
           <Route path='view-course' element={<ViewCourse/>}/>
+          <Route path='access-code' element={<AccessCode/>}/>
+          <Route path='notification' element={<Notifications/>}/>
+          <Route path='profile' element={<Profile/>}/>
+          <Route path='purchase-history' element={<PurchaseHistory/>}/>
         </Route>
 
 

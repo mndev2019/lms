@@ -9,7 +9,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import logo from '../assets/Image/logoremovebg.png'
+// import logo from '../assets/Image/logoremovebg.png'
 
 const Footer = () => {
   return (
@@ -17,9 +17,12 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Top Section */}
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-12">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-8">
           {/* <h2 className="text-4xl font-bold">LOGO</h2> */}
-             <img src={logo} className="h-[50px]"/>
+             {/* <img src={logo} className="h-[50px]"/> */}
+             <div className="text-3xl text-white tracking-tighter">
+                    Ramot<span className="text-yellow-400 font-normal">LMS</span>
+                </div>
 
           <div className="flex gap-4">
             {[FaFacebookF, FaInstagram, FaTiktok, FaYoutube, FaXTwitter].map(

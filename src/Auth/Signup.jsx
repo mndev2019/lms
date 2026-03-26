@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const Signup = () => {
     const navigate = useNavigate();
     const [showPassword, setShowPassword] = useState(false);
-      const handlesubmit = (e) =>{
+    const handlesubmit = (e) => {
         e.preventDefault()
         navigate('/login')
     }
@@ -28,8 +28,10 @@ const Signup = () => {
                 <div className="flex flex-col justify-center px-10 py-8">
 
                     {/* Logo */}
-                    <h2 className="text-2xl font-bold mb-6">LOGO</h2>
-
+                    {/* <h2 className="text-2xl font-bold mb-6">LOGO</h2> */}
+                    <div className="text-3xl font-black tracking-tighter">
+                        Ramot<span className="text-yellow-400 font-normal">LMS</span>
+                    </div>
                     <h3 className="text-[30px] font-semibold text-(--text-primary)">
                         Launch and grow your online learning business with AI
                     </h3>
@@ -89,7 +91,7 @@ const Signup = () => {
                         </div>
 
                         {/* Button */}
-                        <button type="submit" onClick={()=>navigate('/login')} className="w-full bg-[#6292F2] hover:bg-blue-600 text-white py-2 rounded-md text-lg font-medium transition">
+                        <button type="submit" onClick={() => navigate('/login')} className="w-full bg-[#6292F2] hover:bg-blue-600 text-white py-2 rounded-md text-lg font-medium transition">
                             Continue
                         </button>
 
@@ -98,7 +100,7 @@ const Signup = () => {
                     {/* Login */}
                     <p className="text-sm text-(--text-primary) text-center mt-4">
                         Already have an account?{" "}
-                        <span className="text-[#6292F2] cursor-pointer" onClick={()=>navigate('/login')}>Login</span>
+                        <span className="text-[#6292F2] cursor-pointer" onClick={() => navigate('/login')}>Login</span>
                     </p>
 
                 </div>

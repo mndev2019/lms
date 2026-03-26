@@ -12,9 +12,9 @@ const ViewCourse = () => {
       isFree: false,
       cover: null,
       author: "Muskan",
-      students: 120,
-      time: "2 min ago",
-      status: "UNPUBLISHED",
+      // students: 120,
+      // time: "2 min ago",
+      // status: "UNPUBLISHED",
     },
   ];
 
@@ -37,16 +37,12 @@ const ViewCourse = () => {
             </div>
 
             {/* Image */}
-            
-              <img
-                src={html}
-                alt="course"
-                className="w-full h-48 object-cover"
-              />
-            
-             
-           
 
+            <img
+              src={html}
+              alt="course"
+              className="w-full h-48 object-cover"
+            />
             {/* Content */}
             <div className="p-4 space-y-3">
               <h2 className="text-lg font-semibold text-[#595353]">
@@ -60,20 +56,26 @@ const ViewCourse = () => {
               <p className="text-sm text-gray-500 line-clamp-2">
                 {item.description}
               </p>
+              <p className="text-sm text-blue-900 line-clamp-2">
+                Start Now
+              </p>
+              <p className="text-sm text-gray-500 line-clamp-2">
+                Valid Till : <span className="text-green-500">Lifetime</span>
+              </p>
 
               {/* Stats */}
-              <div className="flex justify-between text-xs text-gray-400">
+              {/* <div className="flex justify-between text-xs text-gray-400">
                 <span>{item.students} students</span>
                 <span>{item.time}</span>
-              </div>
+              </div> */}
 
               {/* Price */}
-              <div className="text-[#595353] font-semibold">
+              {/* <div className="text-[#595353] font-semibold">
                 {item.isFree ? "Free" : `₹ ${item.price}`}
-              </div>
+              </div> */}
 
               {/* Actions */}
-              <div className="flex justify-between pt-2 border-t">
+              {/* <div className="flex justify-between pt-2 border-t">
                 <button className="text-[#595353] hover:scale-110 transition">
                   <FaEye />
                 </button>
@@ -83,7 +85,7 @@ const ViewCourse = () => {
                 <button className="text-red-500 hover:scale-110 transition">
                   <FaTrash />
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         ))}
