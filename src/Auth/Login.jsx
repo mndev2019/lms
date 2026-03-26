@@ -57,7 +57,7 @@ const Login = () => {
                         </div>
                         <div className="mt-10">
                             {/* Button */}
-                            <button className="w-full bg-[#6292F2] hover:bg-blue-600 text-white py-2 rounded-md text-lg font-medium transition" onClick={()=> navigate('/dashboard')}>
+                            <button type="submit" className="w-full bg-[#6292F2] hover:bg-blue-600 text-white py-2 rounded-md text-lg font-medium transition" onClick={()=> navigate('/dashboard')}>
                                 Continue
                             </button>
                         </div>

@@ -85,7 +85,7 @@ const Signup = () => {
                         </div>
 
                         {/* Button */}
-                        <button onClick={()=>navigate('/login')} className="w-full bg-[#6292F2] hover:bg-blue-600 text-white py-2 rounded-md text-lg font-medium transition">
+                        <button type="submit" onClick={()=>navigate('/login')} className="w-full bg-[#6292F2] hover:bg-blue-600 text-white py-2 rounded-md text-lg font-medium transition">
                             Continue
                         </button>
 
