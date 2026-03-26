@@ -1,67 +1,38 @@
 import React from "react";
 import { FaRegClock, FaUserCircle } from "react-icons/fa";
+import blog1 from '../../assets/Image/blog1.png'
+import blog2 from '../../assets/Image/blog2.png'
+import blog3 from '../../assets/Image/blog3.png'
 
 const blogs = [
   {
     id: 1,
-    title: "What is Buyback of Shares?",
+    title: " Technical Analysis vs. Fundamental Analysis: Which is better?",
     author: "Dr. Ashish Jain",
     date: "Sat Feb 03, 2026",
     description:
-      "As we are on our journey of understanding corporate actions, share buyback is a key concept. Companies often repurchase their own shares to increase shareholder value, improve financial ratios, and signal confidence in their business.",
-    image:
-      "https://images.unsplash.com/photo-1604594849809-dfedbc827105",
+      "Is it better to read charts or balance sheets? We compare the two most popular investing strategies to help you decide which one fits your risk profile and long-term financial goals.",
+    image:blog1,
   },
   {
     id: 2,
-    title: "Understanding Stock Market Basics",
+    title: "The 2026 Developer Roadmap: How to Learn Online Without Burning Out",
     author: "Neha Sharma",
     date: "Mon Feb 10, 2026",
     description:
-      "The stock market is a platform where buyers and sellers trade shares. Understanding how stock prices move, what drives demand and supply, and how investors make decisions is essential for beginners entering the financial world.",
-    image:
-      "https://images.unsplash.com/photo-1559526324-4b87b5e36e44",
+      " Information overload is the biggest enemy of online students. Discover the exact 4-step framework we use to help our students master complex topics like React and System Design while spending only 2 hours a day in front of the screen.",
+    image:blog2,
   },
   {
     id: 3,
-    title: "Top 5 Investment Strategies for Beginners",
+    title: "Sunday Market Breakdown: Live Technical Analysis for the Week Ahead",
     author: "Rahul Mehta",
     date: "Wed Feb 14, 2026",
     description:
-      "Investing can be overwhelming for beginners, but with the right strategies like SIP, diversification, and long-term investing, you can build a strong financial foundation and minimize risks.",
-    image:
-      "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3",
+      "Stop guessing and start analyzing. Join our live market deep-dive where we identify key support and resistance levels for the upcoming week. Learn to spot the Fake-outs that trap retail investors before they happen.",
+    image:blog3,
   },
-  {
-    id: 4,
-    title: "What is IPO and How It Works?",
-    author: "Priya Verma",
-    date: "Fri Feb 20, 2026",
-    description:
-      "An Initial Public Offering (IPO) is when a private company offers its shares to the public for the first time. It allows companies to raise capital while giving investors an opportunity to invest early.",
-    image:
-      "https://images.unsplash.com/photo-1642543348745-0c3e8a5c50b1",
-  },
-  {
-    id: 5,
-    title: "Technical Analysis vs Fundamental Analysis",
-    author: "Amit Singh",
-    date: "Sun Feb 25, 2026",
-    description:
-      "Technical analysis focuses on price patterns and charts, while fundamental analysis evaluates a company's financial health. Both approaches help investors make informed decisions in different ways.",
-    image:
-      "https://images.unsplash.com/photo-1508385082359-f38ae991e8f2",
-  },
-  {
-    id: 6,
-    title: "How to Read Candlestick Charts",
-    author: "Kavita Gupta",
-    date: "Tue Mar 02, 2026",
-    description:
-      "Candlestick charts are essential tools in trading. They help traders understand price movements, trends, and market psychology using patterns like Doji, Hammer, and Engulfing candles.",
-    image:
-      "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3",
-  },
+  
 ];
 
 const Blog = () => {
@@ -77,7 +48,7 @@ const Blog = () => {
             <img
               src={blog.image}
               alt={blog.title}
-              className="w-full h-[300px] object-cover"
+              className="w-full h-[350px] object-cover"
             />
 
             {/* Content */}
