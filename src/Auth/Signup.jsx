@@ -6,6 +6,10 @@ import { useNavigate } from "react-router-dom";
 const Signup = () => {
     const navigate = useNavigate();
     const [showPassword, setShowPassword] = useState(false);
+      const handlesubmit = (e) =>{
+        e.preventDefault()
+        navigate('/login')
+    }
     return (
         <div className="min-h-screen flex items-center justify-center bg-white">
 
@@ -36,7 +40,7 @@ const Signup = () => {
                     </p>
 
                     {/* Form */}
-                    <form className="space-y-4">
+                    <form className="space-y-4" onSubmit={handlesubmit}>
 
                         <input
                             type="text"

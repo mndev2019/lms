@@ -6,6 +6,10 @@ import { useNavigate } from "react-router-dom";
 const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
     const navigate = useNavigate("");
+    const handlesubmit = (e) =>{
+        e.preventDefault()
+        navigate('/dashboard')
+    }
     return (
         <div className="min-h-screen flex items-center justify-center bg-white">
 
@@ -26,7 +30,7 @@ const Login = () => {
                     </p>
 
                     {/* Form */}
-                    <form className="space-y-4 ">
+                    <form className="space-y-4 " onSubmit={handlesubmit}>
 
 
 
