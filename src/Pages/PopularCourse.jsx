@@ -4,6 +4,7 @@ import card10 from "../assets/Image/card10.png"
 import card11 from "../assets/Image/card11.png"
 import card12 from "../assets/Image/card12.png"
 import { FaStar } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const PopularCourse = () => {
     const advancedCourses = [
@@ -112,9 +113,9 @@ const PopularCourse = () => {
                                         <span className="text-xs text-gray-400 line-through">₹{course.oldPrice}</span>
                                         <span className="text-lg font-bold text-blue-600">₹{course.price}</span>
                                     </div>
-                                    <button className="bg-black text-white text-[10px] font-bold px-4 py-2 rounded-[4px] uppercase tracking-widest hover:bg-yellow-400 hover:text-black transition-colors">
+                                    <Link to="/course-page"  className="bg-black text-white text-[10px] font-bold px-4 py-2 rounded-[4px] uppercase tracking-widest hover:bg-yellow-400 hover:text-black transition-colors">
                                         Buy Now
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

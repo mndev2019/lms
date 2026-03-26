@@ -3,6 +3,7 @@ import card5 from "../assets/Image/card5.png"
 import card6 from "../assets/Image/card6.jpg"
 import card7 from "../assets/Image/card7.png"
 import { FaStar } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const LiveWebinar = () => {
 
@@ -150,9 +151,9 @@ const LiveWebinar = () => {
                                     </span>
                                 </div>
 
-                                <button className="bg-black text-white text-[10px] font-bold px-4 py-2 rounded uppercase tracking-widest hover:bg-yellow-400 hover:text-black transition-colors">
+                                <Link to="/course-page"  className="bg-black text-white text-[10px] font-bold px-4 py-2 rounded uppercase tracking-widest hover:bg-yellow-400 hover:text-black transition-colors">
                                     Buy Now
-                                </button>
+                                </Link>
 
                             </div>
                         </div>
